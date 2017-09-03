@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en"  class="no-js">
+  
+
+
+   
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <link rel="shortcut icon" href="http://static.tumblr.com/1ccbc9v/sCFnc0fp4/apple-touch-icon-72x72.png">
+      
+      <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    
+      <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+      <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+      <link rel="stylesheet" href="css/component.css"> <!-- Resource style -->
+      <link rel="stylesheet" href="css/animated-bg.css"> <!-- Resource style -->
+      <link rel="stylesheet" type="text/css" href="css/normalize.css" /> <!-- shapehovereffect style -->
+      <link rel="stylesheet" type="text/css" href="css/demo.css" /> <!-- shapehovereffect style -->
+      <link rel="stylesheet" type="text/css" href="css/component2.css" /> <!-- shapehovereffect style -->
+      <script src="js/snap.svg-min.js"></script>
+      <script src="js/modernizr.js"></script> <!-- Modernizr -->
+      <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+      <title>Mengqi Zhu Portfolio</title>
+        
+    </head>
+    <body>
+      <header class="cd-header">
+        <aside id="social-media">
+          <img id="linkedin" src="asset/linkedin.png" alt="linkedin" height="16" width="16">
+          <img id="medium" src="asset/medium.png" alt="medium" height="16" width="16">
+        </aside>
+
+        <div class="cd-logo"><a href="#0"><!-- where the logo should be --></a></div>
+    
+        <a class="cd-primary-nav-trigger" href="#0">
+          <span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+        </a> <!-- cd-primary-nav-trigger -->
+      </header>
+    
+      <nav>
+        <ul class="cd-primary-nav">
+          <li class="cd-label">Who</li>
+    
+          <li><a href="#0">About Us</a></li>
+          <li><a href="#0">Blog</a></li>
+    
+          <li class="cd-label">What</li>
+    
+          <li><a href="#0">See Our Projects</a></li>
+          <li><a href="#0">Project Page</a></li>
+    
+          <li class="cd-label">Where</li>
+    
+          <li><a href="#0">Contact Me</a></li>
+    
+          <li class="cd-label">Follow us</li>
+          
+          <li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
+          <li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
+          <li class="cd-social cd-dribbble"><a href="#0">Dribbble</a></li>
+          <li class="cd-social cd-twitter"><a href="#0">Twitter</a></li>
+        </ul>
+      </nav>
+    
+    
+            <div id="large-header" class="large-header">
+              <canvas id="demo-canvas"></canvas>
+              <h1 class="main-title">Hello, I am Mengqi</span></h1>
+            </div>
+    
+    
+    
+    
+    
+    <!-- Section 1 -->
+    
+      <main id="more" class="cd-main-content" style="margin-top: 8rem;">
+        <div class="cd-container">
+          <h4 style="color: rgb(212,175,55);">Who I am</h4>
+          <h1>A Developer & Designer</h1>
+          <p>I am a developer/designer based in Toronto. Beautiful crafted interface and the code behind it can easilty interest me. I am thriving to build a good ecosystem of design & code myself.</p>
+        </div>
+    
+        <div class="cd-container" style="margin-top: 10rem;">
+          <h4 style="color: rgb(212,175,55);">What I Have Done</h4>
+          <h1>My Desgin work</h1>
+          <section id="grid" class="grid clearfix">
+              <a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                <figure>
+                  <img src="img/1.png" />
+                  <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                  <figcaption>
+                    <h2>Crystalline</h2>
+                    <p>Soko radicchio bunya nuts gram dulse.</p>
+                    <button>View</button>
+                  </figcaption>
+                </figure>
+              </a>
+              <a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                <figure>
+                  <img src="img/3.png" />
+                  <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                  <figcaption>
+                    <h2>Cacophony</h2>
+                    <p>Two greens tigernut soybean radish.</p>
+                    <button>View</button>
+                  </figcaption>
+                </figure>
+              </a>
+              <a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                <figure>
+                  <img src="img/5.png" />
+                  <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                  <figcaption>
+                    <h2>Languid</h2>
+                    <p>Beetroot water spinach okra water.</p>
+                    <button>View</button>
+                  </figcaption>
+                </figure>
+              </a>
+              <a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                <figure>
+                  <img src="img/7.png" />
+                  <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                  <figcaption>
+                    <h2>Serene</h2>
+                    <p>Water spinach arugula pea tatsoi.</p>
+                    <button>View</button>
+                  </figcaption>
+                </figure>
+              </a>
+              <a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                <figure>
+                  <img src="img/2.png" />
+                  <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                  <figcaption>
+                    <h2>Nebulous</h2>
+                    <p>Pea horseradish azuki bean lettuce.</p>
+                    <button>View</button>
+                  </figcaption>
+                </figure>
+              </a>
+              <a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                <figure>
+                  <img src="img/4.png" />
+                  <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                  <figcaption>
+                    <h2>Iridescent</h2>
+                    <p>A grape silver beet watercress potato.</p>
+                    <button>View</button>
+                  </figcaption>
+                </figure>
+              </a>
+              <a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                <figure>
+                  <img src="img/6.png" />
+                  <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                  <figcaption>
+                    <h2>Resonant</h2>
+                    <p>Chickweed okra pea winter purslane.</p>
+                    <button>View</button>
+                  </figcaption>
+                </figure>
+              </a>
+              <a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                <figure>
+                  <img src="img/8.png" />
+                  <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                  <figcaption>
+                    <h2>Zenith</h2>
+                    <p>Salsify taro catsear garlic gram.</p>
+                    <button>View</button>
+                  </figcaption>
+                </figure>
+              </a>
+            </section>
+
+
+        </div>	
+            
+        <div class="cd-container-more-about">
+          <div class="row">
+            <a href="#"><div class="cd-container-clmn-1">
+            </div></a>
+            <a href="#"><div class="cd-container-clmn-2">
+            </div></a>
+            <a href="#"><div class="cd-container-clmn-3">
+            </div></a>
+            <a href="#"><div class="cd-container-clmn-4">
+            </div></a>
+          </div>
+    
+          <div class="row">
+            <a href="#"><div class="cd-container-clmn-5">
+            </div></a>
+            <a href="#"><div class="cd-container-clmn-6">
+            </div></a>
+            <a href="#"><div class="cd-container-clmn-7">
+            </div></a>
+            <a href="#"><div class="cd-container-clmn-8">
+            </div></a>
+          </div>
+        </div>
+    
+    
+    <!-- Section 2 (The Amazing People Behind This) -->
+        
+        <div class="cd-container" style="margin-top: 10rem;">
+          <h1>My coding work</h1>
+          <p>Coding is always fun because it is problem solving. I like to code & watch horror films.</p>
+          
+          <div class="cd-container-people">
+            <div class="cd-container-people-clmn-1">
+                <img src="asset/goal-setting.png" alt="goal-setting">
+              <div class="cd-container-people-info">
+                <h4>Sep 2016</h4>
+                <h2>Goal For It</h2>
+                <p>A fun goal setting app that can help you achieve goals through incentives from close friends. React, Redux, Node.js, Postgresql.</p>
+              </div>
+            </div>
+            <div class="cd-container-people-clmn-2">
+                <img src="asset/owl.png" alt="owl">
+              <div class="cd-container-people-info">
+                <h4>Nov 2016</h4>
+                <h2>Owl gallery</h2>
+                <p>A voice-recognition photo gallery website that collects trending photos and photos from your friends. React, Redux, Node.js, Flickr api.</p>
+              </div>
+            </div>		
+            <div class="cd-container-people-clmn-3">
+                <img src="http://static.tumblr.com/1ccbc9v/X4Dnbwf3c/ricki-hall.png">
+              <div class="cd-container-people-info">
+                <h4>In progress</h4>
+                <h2>Sizzling</h2>
+                <p>A Youtube trending video directory that can be viewed on a world map. Give you a sense of what is trending in different countries and regions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    
+    <!-- Section 3 (We Like To Write) -->
+      
+        <div class="cd-container" style="margin-top: 10rem;">
+          <h4 style="color: rgb(212,175,55);">Last Post</h4>
+          <h1>I Like to Write</h1>
+    
+          
+          <div class="cd-container-home-blog">
+            <div class="cd-container-blog-clmn-1">
+                <img src="http://demo.select-themes.com/stockholm15/wp-content/uploads/2014/06/office3.jpg">
+            </div>
+            <div class="cd-container-blog-clmn-2">
+              <div class="cd-container-blog-info">
+                <h4>14 September 2017</h4>
+                <h2>Impactful Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                
+                <a href="#"><div class="read-more-btn-small">Read</div></a>
+              </div>
+            </div>		
+          </div>
+        </div>
+        
+          <div class="cd-container-blog-read-posts">
+            <a href="#"><div class="read-more-posts-btn">More From My Blog</div></a>
+          </div>
+          
+    
+    <!-- Section 4 (Work With Us) -->
+      
+        <div class="cd-container">
+          <h4 style="color: rgb(212,175,55);">Contact Me</h4>
+          
+        
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    
+    <!-- Section 5 (Footer) -->
+        
+        <div class="footer">
+          <div class="footer-content">
+          </div>
+        </div>
+        
+      </main>
+    
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5wGdqrTcgLdOPzMbASsbiHkloxc6v2rE"></script>
+    
+        <script src="js/TweenLite.min.js"></script>
+        <script src="js/EasePack.min.js"></script>
+        <script src="js/rAF.js"></script>
+        <script src="js/demo-1.js"></script>
+    
+    <!-- Script for smooth scrolling -->
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+
+      //shapehoveeffect
+			(function() {
+	
+				function init() {
+					var speed = 250,
+						easing = mina.easeinout;
+
+					[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+						var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+							pathConfig = {
+								from : path.attr( 'd' ),
+								to : el.getAttribute( 'data-path-hover' )
+							};
+
+						el.addEventListener( 'mouseenter', function() {
+							path.animate( { 'path' : pathConfig.to }, speed, easing );
+						} );
+
+						el.addEventListener( 'mouseleave', function() {
+							path.animate( { 'path' : pathConfig.from }, speed, easing );
+						} );
+					} );
+				}
+
+				init();
+
+			})();
+    </script>
+    
+    </body>
+    </html>
+    
+  
+  
