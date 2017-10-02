@@ -2,7 +2,7 @@
 .large-header {
 	position: relative;
 	width: 100%;
-	background-image: url('http://static.tumblr.com/1ccbc9v/ng3ncd339/cd-intro-bg.jpg');
+	background-image: url('../asset/sunrise.jpg');
 	overflow: hidden;
 	background-size: cover;
 	background-position: center center;
