@@ -13,7 +13,8 @@
       <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-    
+      <link href="https://fonts.googleapis.com/css?family=Lobster|Righteous" rel="stylesheet">
+     
       <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
       <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
       <link rel="stylesheet" href="css/component.css"> <!-- Resource style -->
@@ -28,14 +29,14 @@
         
     </head>
     <body>
-      <header class="cd-header">
+      <!-- <header class="cd-header">
         <aside id="social-media">
-          <!-- <img id="linkedin" src="asset/linkedin.png" alt="linkedin" height="16" width="16">
-          <img id="medium" src="asset/medium.png" alt="medium" height="16" width="16"> -->
+          <img id="linkedin" src="asset/linkedin.png" alt="linkedin" height="16" width="16">
+          <img id="medium" src="asset/medium.png" alt="medium" height="16" width="16">
         </aside>
 
     
-      </header>
+      </header> -->
     
       <!-- <nav>
         <ul class="cd-primary-nav">
@@ -65,7 +66,7 @@
     
             <div id="large-header" class="large-header">
               <canvas id="demo-canvas"></canvas>
-              <h1 class="main-title">Code beautifully</span></h1>
+              <h1 class="main-title"><span id="first-line-title" style="color: rgba(2, 23, 37, 0.7); ">Hi, I am Mengqi. </span></br> I code <span id="beautiful-things">Beautiful things</span></h1>
             </div>
     
     
@@ -81,14 +82,14 @@
           <p>I am a UI Developer/Designer based in Toronto. Beautiful crafted interface and the code behind it can easilty interest me. I am thriving to build a good ecosystem of design & code myself.</p>
         </div>
     
-        <div class="cd-container" style="margin-top: 10rem;">
+        <div class="cd-container" id="design" style="margin-top: 10rem;">
           <h4 style="color: rgb(212,175,55);">What I Have Done</h4>
           <h2>My Desgin work</h2>
           <p>Design is the soul of any interface.</br>It is about how to get across ideas in the most efficient and enjoyable way.</p>
           <div class="cd-container-people">
             <div class="cd-container-people-clmn-1">
               <a href="https://medium.com/@mengqizhu/ui-explorations-for-a-tiny-house-website-f8cfc91833a6">
-                <img src="asset/tinyto.png" alt="tiny-house-3D-model">
+                <img src="asset/tinyto4.png" alt="tiny-house-3D-model">
               <div class="cd-container-people-info">
                   <h4>Sep 2017</h4>
                   <h3>TinyTO</h3>
@@ -108,10 +109,10 @@
             </div>		
             <div class="cd-container-people-clmn-3">
               <a href="https://medium.com/@mengqizhu/ui-case-study-not-far-from-the-tree-a-scheduling-portal-d341002e2f50">                 
-                <img src="asset/chilling-pear.svg">
+                <img src="asset/chilling-pear.png  ">
                 <div class="cd-container-people-info">
                   <h4>July 2017</h4>
-                  <h3>Not Far From The Tree</h3>
+                  <h3>NFFTT</h3>
                   <p>NFFTT is a non-profit that organizes free fruit-picking for busy homeowners. I challendge myself to design something fresh and close to their branding.</p>
                 </div>
               </a>
@@ -124,34 +125,40 @@
     
     <!-- Section 2 (The Amazing People Behind This) -->
         
-        <div class="cd-container" style="margin-top: 10rem;">
+        <div class="cd-container" id="coding" style="margin-top: 10rem;">
           <h2>My coding work</h2>
           <p>Coding is building blocks. </br>Here computers are taught to assist humans in whichever way they want.</p>
           
           <div class="cd-container-people">
             <div class="cd-container-people-clmn-1">
-                <img src="asset/goal-setting.png" alt="goal-setting">
-              <div class="cd-container-people-info">
-                <h4>Sep 2016</h4>
-                <h3>Goal For It</h3>
-                <p>A fun goal setting app that can help you achieve goals through incentives from close friends. React, Redux, Node.js, Postgresql.</p>
-              </div>
+              <a href="https://github.com/treeforever/goal-for-it">
+                <img src="asset/goal.png" alt="goal-setting">
+                <div class="cd-container-people-info">
+                  <h4>Sep 2016</h4>
+                  <h3>Goal For It</h3>
+                  <p>A fun goal setting app that can help you achieve goals through incentives from close friends. React, Redux, Node.js, Postgresql.</p>
+                </div>
+              </a>
             </div>
             <div class="cd-container-people-clmn-2">
+              <a href="https://github.com/treeforever/voice-recognition-photo-gallary">
                 <img src="asset/owl.png" alt="owl">
-              <div class="cd-container-people-info">
-                <h4>Nov 2016</h4>
-                <h3>Owl gallery</h3>
-                <p>A voice-recognition photo gallery website that collects trending photos and photos from your friends. React, Redux, Node.js, Flickr api.</p>
-              </div>
+                <div class="cd-container-people-info">
+                  <h4>Nov 2016</h4>
+                  <h3>Owl gallery</h3>
+                  <p>A voice-recognition photo gallery website that collects trending photos and photos from your friends. React, Redux, Node.js, Flickr api.</p>
+                </div>
+              </a>
             </div>		
             <div class="cd-container-people-clmn-3">
-                <img src="http://static.tumblr.com/1ccbc9v/X4Dnbwf3c/ricki-hall.png">
-              <div class="cd-container-people-info">
-                <h4>In progress</h4>
-                <h3>Sizzling</h3>
-                <p>A Youtube trending video directory that can be viewed on a world map. Give you a sense of what is trending in different countries and regions.</p>
-              </div>
+              <a href="https://github.com/treeforever/sizzling">
+                <img src="asset/world-map.jpg" style="width: 245px; height: 191px;">
+                <div class="cd-container-people-info">
+                  <h4>In progress</h4>
+                  <h3>Sizzling</h3>
+                  <p>A Youtube trending video directory that can be viewed on a world map. Give you a sense of what is trending in different countries and regions.</p>
+                </div>
+              </a>
             </div>
           </div>
         </div>

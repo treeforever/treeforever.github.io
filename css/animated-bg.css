@@ -15,7 +15,7 @@
   width: 90%;
   max-width: 1170px;
   left: 50%;
-  top: 50%;
+  top: 42%;
   bottom: auto;
   right: auto;
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -31,6 +31,17 @@
   color: rgb(255,255,255);
   letter-spacing: .05em;
   line-height: 1.5em;
+}
+
+#fist-line-title span {
+	color: rgba(2, 23, 37, 0.7);	
+}
+
+#beautiful-things {
+	/* font-family: Righteous; */
+	font-family: Lobster;
+	/* font-style: italic; */
+	font-weight: light;
 }
 
 .demo-1 .main-title, 
