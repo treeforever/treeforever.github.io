@@ -1,1 +1,5 @@
-img/
+dist
+node_modules
+.vscode
+
+
