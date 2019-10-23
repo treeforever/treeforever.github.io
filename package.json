@@ -5,7 +5,8 @@
   "main": "webpack.config.js",
   "dependencies": {
     "react": "^16.10.2",
-    "react-dom": "^16.10.2"
+    "react-dom": "^16.10.2",
+    "styled-system": "^5.1.2"
   },
   "devDependencies": {
     "@types/react": "^16.9.9",
