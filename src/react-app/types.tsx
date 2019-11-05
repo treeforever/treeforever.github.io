@@ -8,6 +8,9 @@ export type CategoryCountMap = {
     'Accessories': number
 }
 export type Category = keyof CategoryCountMap
+
+export type AllCategories = Category | 'All'
+
 export type Product = {
     image_url: string,
     price: number,
@@ -19,7 +22,7 @@ export type Product = {
 export type Products = Product[] | [];
 
 type CategoryNameAndCount = {
-    name: Category,
+    name: AllCategories,
     count: number
 }
 

@@ -1,9 +1,10 @@
 import { Products, Category, Categories } from './types'
 
-
-
 export const getCategories = (products: Products): Categories => {
+    if (products.length === 0) return [];
+
     const categories = [
+        'All',
         'Sweaters',
         'Tops',
         'Outerwear',
@@ -17,12 +18,11 @@ export const getCategories = (products: Products): Categories => {
     categories.forEach(category => {
         categoryCountMap[category] = 0
     })
+    categoryCountMap.All = products.length
 
     products.forEach((product) => {
         categoryCountMap[product.category] += 1;
     })
 
-
-    const a =  categories.map((categoryName: Category) => ({ name: categoryName, count: categoryCountMap[categoryName] }))
-    return a;
+    return categories.map((categoryName: Category) => ({ name: categoryName, count: categoryCountMap[categoryName] }))
 }

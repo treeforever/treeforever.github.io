@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
 import * as firebase from "firebase/app";
 import 'firebase/firestore';
 
@@ -9,7 +9,7 @@ import ProductGrid from './components/ProductGrid'
 import Categories from './components/Categories'
 import FlexContainer from './components/FlexContainer'
 import { getCategories } from './utils'
-import { Product, Products, } from './types'
+import { Product, Products, Category, AllCategories } from './types'
 
 const firebaseConfig = {
   apiKey: 'AIzaSyCbM00pYNYgyCjmaUQpdjxvtmXB7rpRETA',
@@ -25,7 +25,7 @@ const db = firebase.firestore();
 
 
 export const App = () => {
-  const [products, setProducts]: [Product[], any] = React.useState([]);
+  const [products, setProducts]: [Product[], (products: Product[]) => void] = useState([]);
   useEffect(() => {
     const getProducts = async () => {
       const querySnapshot = await db.collection("products").get();
@@ -38,10 +38,25 @@ export const App = () => {
     getProducts();
   }, [])
 
-  const [categories, setCategories] = useState(getCategories(products))
+  const memoizedCategories = useMemo(() => getCategories(products), [products])
+  const [categories, setCategories] = useState(memoizedCategories)
   useEffect(() => {
-    setCategories(getCategories(products))
+    setCategories(memoizedCategories)
   }, [products])
+
+  const [selectedCategory, setSelectedCategory]: [AllCategories, any] = useState('All')
+
+  const [filteredProducts, setFilteredProducts] = useState(products)
+  useEffect(() => {
+    setFilteredProducts(products)
+  }, [products])
+
+  const categoryFilterHandler = useCallback((category: AllCategories) => {
+    const filtered = products.filter((p) => p.category === category)
+    setFilteredProducts(filtered);
+    setSelectedCategory(category)
+  }, [products])
+
 
 
   return (<>
@@ -49,10 +64,13 @@ export const App = () => {
     <Banner />
     <FlexContainer flexDirection='row'>
       <FlexContainer flexGrow={1}>
-        <Categories categories={categories} />
+        <Categories
+          categories={categories}
+          onCategoryClick={categoryFilterHandler}
+          selectedCategory={selectedCategory} />
       </FlexContainer>
       <FlexContainer flexGrow={2}>
-        <ProductGrid products={products} />
+        <ProductGrid products={filteredProducts} />
       </FlexContainer>
     </FlexContainer>
   </>)

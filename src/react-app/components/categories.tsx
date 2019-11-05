@@ -1,25 +1,34 @@
 import * as React from "react";
 
-import { Categories } from '../types'
+import { Category, Categories, AllCategories } from '../types'
 
 const style = {
     height: '100%',
     width: '100%',
 }
 
-const CategoryItem = ({ name, count }: { name: string, count: number }) =>
-    <li style={{ padding: '2rem 0' }}>
-        <span className="category-name">{name}</span>
-        {' '}
-        <span className="category-count">({count})</span>
+const CategoryItem = ({ name, count, selectedCategory, onClick }: { name: AllCategories, count: number, selectedCategory: boolean, onClick: (category: AllCategories) => void }) =>
+    <li style={{ padding: '1rem 0' }}>
+        <button style={{ border: 'none', padding: 0, fontWeight: selectedCategory ? 700 : 500 }} onClick={() => onClick(name)}>
+            <span className="category-name">{name}</span>
+            {' '}
+            <span className="category-count">({count})</span>
+        </button>
     </li>
 
-export default ({ categories }: { categories: Categories }) => (
+export default ({ categories, selectedCategory, onCategoryClick }:
+    { categories: Categories, selectedCategory: AllCategories, onCategoryClick: (category: Category) => void }) => (
     <>
         <div style={style}>
             <ul style={{ 'listStyle': 'none', padding: '0 3rem' }}>
                 {categories.map(category =>
-                    <CategoryItem key={category.name} {...category} />)}
+                    <CategoryItem
+                        key={category.name}
+                        name={category.name}
+                        count={category.count}
+                        onClick={onCategoryClick}
+                        selectedCategory={selectedCategory === name} />
+                )}
             </ul>
         </div>
     </>
