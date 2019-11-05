@@ -17,9 +17,7 @@ const CategoryItem = ({ name, count, selectedCategory, onClick }: { name: AllCat
     </li>
 
 export default ({ categories, selectedCategory, onCategoryClick }:
-    { categories: Categories, selectedCategory: AllCategories, onCategoryClick: (category: Category) => void }) => {
-    console.log('sss', selectedCategory, name)
-    return (
+    { categories: Categories, selectedCategory: AllCategories, onCategoryClick: (category: Category) => void }) => (
         <>
             <div style={style}>
                 <ul style={{ 'listStyle': 'none', padding: '0 3rem' }}>
@@ -35,4 +33,3 @@ export default ({ categories, selectedCategory, onCategoryClick }:
             </div>
         </>
     )
-}

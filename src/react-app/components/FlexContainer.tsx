@@ -9,6 +9,7 @@ type Props = {
     children: ReactNode | Element[],
     flexDirection?: 'row' | 'row-reverse' | 'column' | 'column-reverse'
     flexGrow?: number;
+    width?: string;
 }
 
 export default ({ children, ...styleProps }: Props) => (

@@ -67,13 +67,13 @@ export const App = () => {
     <NavBar />
     <Banner />
     <FlexContainer flexDirection='row'>
-      <FlexContainer flexGrow={1}>
+      <FlexContainer width='20%'>
         <Categories
           categories={categories}
           onCategoryClick={categoryFilterHandler}
           selectedCategory={selectedCategory} />
       </FlexContainer>
-      <FlexContainer flexGrow={2}>
+      <FlexContainer width='80%'>
         <ProductGrid products={filteredProducts} />
       </FlexContainer>
     </FlexContainer>
