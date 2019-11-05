@@ -1,10 +1,10 @@
-import { Products, Category, Categories } from './types'
+import { Products, Category, Categories, ALL_CATEGORY } from './types'
 
 export const getCategories = (products: Products): Categories => {
     if (products.length === 0) return [];
 
     const categories = [
-        'All',
+        ALL_CATEGORY,
         'Sweaters',
         'Tops',
         'Outerwear',

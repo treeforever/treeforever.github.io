@@ -17,19 +17,22 @@ const CategoryItem = ({ name, count, selectedCategory, onClick }: { name: AllCat
     </li>
 
 export default ({ categories, selectedCategory, onCategoryClick }:
-    { categories: Categories, selectedCategory: AllCategories, onCategoryClick: (category: Category) => void }) => (
-    <>
-        <div style={style}>
-            <ul style={{ 'listStyle': 'none', padding: '0 3rem' }}>
-                {categories.map(category =>
-                    <CategoryItem
-                        key={category.name}
-                        name={category.name}
-                        count={category.count}
-                        onClick={onCategoryClick}
-                        selectedCategory={selectedCategory === name} />
-                )}
-            </ul>
-        </div>
-    </>
-)
+    { categories: Categories, selectedCategory: AllCategories, onCategoryClick: (category: Category) => void }) => {
+    console.log('sss', selectedCategory, name)
+    return (
+        <>
+            <div style={style}>
+                <ul style={{ 'listStyle': 'none', padding: '0 3rem' }}>
+                    {categories.map(category =>
+                        <CategoryItem
+                            key={category.name}
+                            name={category.name}
+                            count={category.count}
+                            onClick={onCategoryClick}
+                            selectedCategory={selectedCategory === category.name} />
+                    )}
+                </ul>
+            </div>
+        </>
+    )
+}

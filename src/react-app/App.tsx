@@ -9,7 +9,7 @@ import ProductGrid from './components/ProductGrid'
 import Categories from './components/Categories'
 import FlexContainer from './components/FlexContainer'
 import { getCategories } from './utils'
-import { Product, Products, Category, AllCategories } from './types'
+import { Product, Products, AllCategories, ALL_CATEGORY } from './types'
 
 const firebaseConfig = {
   apiKey: 'AIzaSyCbM00pYNYgyCjmaUQpdjxvtmXB7rpRETA',
@@ -44,7 +44,7 @@ export const App = () => {
     setCategories(memoizedCategories)
   }, [products])
 
-  const [selectedCategory, setSelectedCategory]: [AllCategories, any] = useState('All')
+  const [selectedCategory, setSelectedCategory]: [AllCategories, any] = useState(ALL_CATEGORY)
 
   const [filteredProducts, setFilteredProducts] = useState(products)
   useEffect(() => {
@@ -52,8 +52,12 @@ export const App = () => {
   }, [products])
 
   const categoryFilterHandler = useCallback((category: AllCategories) => {
-    const filtered = products.filter((p) => p.category === category)
-    setFilteredProducts(filtered);
+    if (category === ALL_CATEGORY) {
+      setFilteredProducts(products);
+    } else {
+      const filtered = products.filter((p) => p.category === category)
+      setFilteredProducts(filtered);
+    }
     setSelectedCategory(category)
   }, [products])
 

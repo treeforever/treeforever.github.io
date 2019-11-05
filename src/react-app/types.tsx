@@ -9,7 +9,8 @@ export type CategoryCountMap = {
 }
 export type Category = keyof CategoryCountMap
 
-export type AllCategories = Category | 'All'
+export const ALL_CATEGORY = 'All'
+export type AllCategories = Category | typeof ALL_CATEGORY
 
 export type Product = {
     image_url: string,
