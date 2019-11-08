@@ -24,6 +24,7 @@ const handleStyle = {
 } as React.CSSProperties;
 
 const bodyStyle = {
+    padding: '3rem',
     background: 'yellow',
     height: '300px',
     width: '100%',
@@ -47,16 +48,20 @@ const WardrobeHandle = () =>
 const WardrobeBody = () =>
     <div id="body-container" style={bodyStyle}>
         <FlexContainer id="wardrobe-row">
-            <div id="Outwear-container">
-            <div id="Outwear-text">Outwear</div>
-            <div id="Outwear-placeholder" style={{height: '100px', width: '100px', border: 'dashed 1px grey'}}></div>
+            <div id="Outerwear-container">
+                <div id="Outerwear-text">Outerwear</div>
+                <div id="Outerwear-placeholder" style={{ height: '100px', width: '100px', border: 'dashed 1px grey' }}>
+                    <img src="https://aritzia.scene7.com/is/image/Aritzia/medium/f19_01_a05_73432_18031_on_a.jpg" height="100"/>
+                </div>
             </div>
-            
+
             <div>+</div>
 
-        <div id="Tops-container">
-            <div id="Tops-text">Tops</div>
-            <div id="Tops-placeholder" style={{ height: '100px', width: '100px', border: 'dashed 1px grey' }}></div>
+            <div id="Tops-container">
+                <div id="Tops-text">Tops</div>
+                <div id="Tops-placeholder" style={{ height: '100px', width: '100px', border: 'dashed 1px grey' }}>
+                    <img src="https://aritzia.scene7.com/is/image/Aritzia/medium/f19_04_a03_74987_17809_on_b.jpg" height="100" />
+                </div>
             </div>
         </FlexContainer>
 
@@ -65,7 +70,7 @@ const WardrobeBody = () =>
 
 export default () => {
     const clickHandler = () => {
-        
+
     }
     return (
         <div style={containerStyle} id="wardrobe-container">
