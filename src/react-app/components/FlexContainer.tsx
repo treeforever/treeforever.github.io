@@ -7,9 +7,13 @@ const style = {
 
 type Props = {
     children: ReactNode | Element[],
+    id?: string;
     flexDirection?: 'row' | 'row-reverse' | 'column' | 'column-reverse'
     flexGrow?: number;
     width?: string;
+    height?: string;
+    minHeight?: string,
+    margin?: string
 }
 
 export default ({ children, ...styleProps }: Props) => (

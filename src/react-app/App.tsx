@@ -10,6 +10,7 @@ import Categories from './components/Categories'
 import FlexContainer from './components/FlexContainer'
 import { getCategories } from './utils'
 import { Product, Products, AllCategories, ALL_CATEGORY } from './types'
+import MyWardrobe from "./MyWardrobe";
 
 const firebaseConfig = {
   apiKey: 'AIzaSyCbM00pYNYgyCjmaUQpdjxvtmXB7rpRETA',
@@ -77,5 +78,6 @@ export const App = () => {
         <ProductGrid products={filteredProducts} />
       </FlexContainer>
     </FlexContainer>
+    <MyWardrobe />
   </>)
 }
