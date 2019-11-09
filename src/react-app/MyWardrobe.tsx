@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useState, useMemo } from "react";
 import FlexContainer from "./components/FlexContainer";
 
 const containerStyle = {
@@ -9,7 +10,7 @@ const containerStyle = {
     left: 0,
     right: 0,
     height: '50px',
-    transform: 'translateY(-300px)'
+    transition: 'bottom 1s ease'
 } as React.CSSProperties;
 
 const handleStyle = {
@@ -37,9 +38,10 @@ const horizontalCenter = {
     width: 'auto', margin: 'auto'
 }
 
-const WardrobeHandle = () =>
-    <button style={handleStyle} id="handle-container">
-        <div style={horizontalCenter}>&#9650;</div>
+const WardrobeHandle = ({ clickHandler, isDownArrow }: { clickHandler: any, isDownArrow: boolean }) =>
+    <button style={handleStyle} id="handle-container" onClick={clickHandler}>
+        {isDownArrow ? (<div style={horizontalCenter}>&#9660;</div>)
+            : (<div style={horizontalCenter}>&#9650;</div>)}
         <div style={horizontalCenter}>
             My Wardrobe
             </div>
@@ -51,7 +53,7 @@ const WardrobeBody = () =>
             <div id="Outerwear-container">
                 <div id="Outerwear-text">Outerwear</div>
                 <div id="Outerwear-placeholder" style={{ height: '100px', width: '100px', border: 'dashed 1px grey' }}>
-                    <img src="https://aritzia.scene7.com/is/image/Aritzia/medium/f19_01_a05_73432_18031_on_a.jpg" height="100"/>
+                    <img src="https://aritzia.scene7.com/is/image/Aritzia/medium/f19_01_a05_73432_18031_on_a.jpg" height="100" />
                 </div>
             </div>
 
@@ -69,12 +71,14 @@ const WardrobeBody = () =>
     </div>
 
 export default () => {
+    const [wardrobeIsOpen, setWardrobeOpen] = useState(false);
     const clickHandler = () => {
-
+        setWardrobeOpen(!wardrobeIsOpen)
     }
+    const movingStyle = useMemo(() => ({ ...containerStyle, ...(wardrobeIsOpen ? { bottom: '200px' } : {}) }), [wardrobeIsOpen])
     return (
-        <div style={containerStyle} id="wardrobe-container">
-            <WardrobeHandle />
+        <div style={movingStyle} id="wardrobe-container">
+            <WardrobeHandle clickHandler={clickHandler} isDownArrow={wardrobeIsOpen} />
             <WardrobeBody />
         </div>
     )
