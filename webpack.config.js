@@ -29,8 +29,15 @@ module.exports = {
         options: {
           compilerOptions: {
             "sourceMap": !isProduction,
+            "module": "commonjs"
           }
         }
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader',
+        ],
       },
       { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
     ]
