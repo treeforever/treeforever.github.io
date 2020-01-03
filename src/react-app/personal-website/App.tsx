@@ -1,14 +1,14 @@
 import * as React from "react";
 import { useState, useEffect, useCallback, useMemo } from 'react';
-import M from './M'
-import Wave from './Wave'
+import Hero from './Hero'
+import BlueBlob from './BlueBlob'
 
 export const App = () => {
 
 
     return (
         <>
-            <Wave />
-            <M />
+            <Hero />
+            <BlueBlob />
         </>)
 }
