@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 85vh;
   max-height: 900px;
   border-radius: 5px;
@@ -35,7 +35,7 @@ const waveStyle = `
   position: absolute;
   top: 3%;
   background: #0af;
-  width: 200vw;
+  width: 200%;
   height: 200vw;
   margin-left: -50vw;
   margin-top: -150vw;
