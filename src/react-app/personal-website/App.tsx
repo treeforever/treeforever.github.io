@@ -5,10 +5,12 @@ import styled from 'styled-components';
 
 
 import Hero from './Hero'
-import BlueBlob from './BlueBlob'
+import FrontendSkills from './FrontendSkills'
+import AnimationSkills from './AnimationSkills'
+import BackendSkills from './BackendSkills'
 
 const StyledContainer = styled(Container)`
- background: #eafff2;
+ background: #fcfcfc;
 `
 
 export const App = () => {
@@ -19,7 +21,9 @@ export const App = () => {
             <Hero />
             <main>
                 <StyledContainer maxWidth="lg">
-                    <BlueBlob />
+                    <FrontendSkills />
+                    <AnimationSkills />
+                    <BackendSkills />
                 </StyledContainer>
             </main>
         </Grid>)
