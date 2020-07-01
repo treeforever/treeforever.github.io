@@ -32,9 +32,9 @@ export default () => {
             <svg width="443px" height="530px" viewBox="0 0 443 530" version="1.1">
                 <defs>
                     <linearGradient x1="3.54687615%" y1="45.4824767%" x2="97.13582%" y2="54.2165022%" id="linearGradient-1">
-                        <stop stop-color="#4776FF" offset="0%"></stop>
-                        <stop stop-color="#4171FC" offset="86.1407153%"></stop>
-                        <stop stop-color="#4776FF" offset="100%"></stop>
+                        <stop stopColor="#4776FF" offset="0%"></stop>
+                        <stop stopColor="#4171FC" offset="86.1407153%"></stop>
+                        <stop stopColor="#4776FF" offset="100%"></stop>
                     </linearGradient>
                 </defs>
                 <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -49,10 +49,13 @@ export default () => {
                         <tspan x="117" y="316">- observables</tspan>
                     </text>
                     <g transform="translate(134.000000, 358.000000)">
-                        <text id="examples" fontFamily="JosefinSans-Regular, Josefin Sans" fontSize="31" fontWeight="normal" fill="#FBFEFF">
-                            <tspan x="0" y="29">examples </tspan>
-                        </text>
-                        <path id="Line" d="M169.78866,23.5666667 L147.113402,23.5666667 L146.613402,23.5666667 L146.613402,22.5666667 L147.113402,22.5666667 L169.78866,22.5666667 L169.78866,18.5666667 L178.78866,23.0666667 L169.78866,27.5666667 L169.78866,23.5666667 Z" fill="#FFFEFE" fillRule="nonzero"></path>
+                        <a href="/react-app-example">
+                            <text id="examples" fontFamily="JosefinSans-Regular, Josefin Sans" fontSize="31" fontWeight="normal" fill="#FBFEFF">
+                                <tspan x="0" y="29">examples </tspan>
+                            </text>
+
+                            <path id="Line" d="M169.78866,23.5666667 L147.113402,23.5666667 L146.613402,23.5666667 L146.613402,22.5666667 L147.113402,22.5666667 L169.78866,22.5666667 L169.78866,18.5666667 L178.78866,23.0666667 L169.78866,27.5666667 L169.78866,23.5666667 Z" fill="#FFFEFE" fillRule="nonzero"></path>
+                        </a>
                     </g>
                 </g>
             </svg>
