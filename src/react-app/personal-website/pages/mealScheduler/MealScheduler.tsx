@@ -8,6 +8,16 @@ import HeroImage from './hero.jpg';
 export default () => {
 
     return (
-        <img src={HeroImage}>meal scheduler</img>
+        <SizedImage />
     );
 };
+
+const SizedImage = styled.img.attrs(() => ({ src: HeroImage}))`
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+`;
+ 

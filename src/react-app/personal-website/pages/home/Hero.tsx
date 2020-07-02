@@ -2,7 +2,7 @@ import * as React from "react";
 import { Container, Grid, Typography } from '@material-ui/core'
 import styled from 'styled-components';
 
-import Wave from './Wave'
+import Wave from '../../Wave'
 // import { styled } from '@material-ui/core/styles';
 
 const StyledH1 = styled.h1`

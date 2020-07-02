@@ -5,8 +5,9 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import { createGlobalStyle } from 'styled-components';
 
-import Home from "./Home";
+import Home from "./pages/home/Home";
 import MealScheduler from "./pages/mealScheduler/MealScheduler";
 
 export const App = () => {
@@ -14,6 +15,7 @@ export const App = () => {
 
     return (
         <Router>
+            <GlobalStyle />
             <Link to="/meal-scheduler">Meal Scheduler</Link>
             <Switch>
                 <Route exact path="/">
@@ -22,7 +24,12 @@ export const App = () => {
                 <Route exact path="/meal-scheduler">
                     <MealScheduler />
                 </Route>
-            </Switch>
-            
+            </Switch>            
         </Router>)
 }
+
+const GlobalStyle = createGlobalStyle`
+  body, html {
+    height: 100%;
+  }
+`
