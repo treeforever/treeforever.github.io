@@ -11,8 +11,6 @@ import Home from "./pages/home/Home";
 import MealScheduler from "./pages/mealScheduler/MealScheduler";
 
 export const App = () => {
-
-
     return (
         <Router>
             <GlobalStyle />
@@ -25,7 +23,8 @@ export const App = () => {
                     <MealScheduler />
                 </Route>
             </Switch>            
-        </Router>)
+        </Router>
+    )
 }
 
 const GlobalStyle = createGlobalStyle`

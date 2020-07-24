@@ -45,5 +45,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src', 'react-app', 'index.html') }),
     new webpack.HotModuleReplacementPlugin()
-  ]
+  ],
+  devServer: {
+    historyApiFallback: true,
+  }
 }
